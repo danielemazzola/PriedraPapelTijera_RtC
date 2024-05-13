@@ -1,41 +1,43 @@
 #containerGame {
-  width: 100%;
+  width: var(--width-full);
   display: flex;
-  gap: 10px;
+  gap: var(--gap-m);
 }
 #containerGame > div {
-  width: 100%;
+  width: var(--width-full);
   display: flex;
   align-items: end;
   flex-direction: column;
-  background-color: rgb(0, 0, 80);
-  color: yellow;
-  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--yellow-color);
+  padding: var(--padding-s);
 }
 
 #containerGame > div > p {
-  padding: 3px;
-  font-size: 24px;
+  padding: var(--padding-xs);
+  font-size: var(--font-size-m);
 }
 #optionsUser,
 #optionsMachina {
-  height: 30svh;
-  border: 2px solid rgb(0, 0, 80);
-  background-color: white;
-  width: 100%;
+  width: var(--width-full);
+  display: flex;
 }
 #optionsUser > button {
-  width: 100%;
-  height: 10svh;
+  padding: 20px;
+  width: var(--width-full);
   cursor: pointer;
-  background-color: white;
-  font-size: 35px;
+  font-size: var(--font-size-l);
 }
 #optionsMachina > button {
-  width: 100%;
-  height: 10svh;
+  padding: 20px;
+  width: var(--width-full);
   cursor: not-allowed;
-  background-color: white;
-  font-size: 35px;
+  font-size: var(--font-size-l);
   text-align: center;
+}
+@media (max-width: 500px) {
+  #optionsUser,
+  #optionsMachina {
+    display: inline-block;
+  }
 }
