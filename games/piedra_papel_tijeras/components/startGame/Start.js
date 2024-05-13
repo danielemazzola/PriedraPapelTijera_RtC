@@ -18,7 +18,7 @@ export const Start = () => {
       (val) => val
     )}! En este desafío, tu objetivo es vencer a la máquina seleccionando una de las tres opciones: ${options.map(
     (val) => val
-  )}. El juego se compone de tres partidas, de 3 segundos cada una, para determinar quién será el ganador.<br><br>
+  )}. El juego se compone de tres partidas, para determinar quién será el ganador.<br><br>
 
     Antes de comenzar, introduce tu nombre para personalizar la experiencia. Es importante mencionar que tus datos no se almacenarán en las cookies ni en ningún otro lugar, garantizando tu privacidad.<br><br>
     

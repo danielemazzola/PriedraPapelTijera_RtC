@@ -16,8 +16,8 @@ export const arrayOptions = (array, user, machina) => {
 export const consult = (user) => {
   const machina = Math.floor(Math.random() * options.length)
   const messages = [
-    { msg: '¡haz ganado!' },
-    { msg: 'haz perdido' },
+    { msg: '¡has ganado!' },
+    { msg: 'has perdido' },
     { msg: 'empate' }
   ]
 
