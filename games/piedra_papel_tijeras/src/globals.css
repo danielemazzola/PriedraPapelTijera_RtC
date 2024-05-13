@@ -6,6 +6,11 @@
   --yellow-color: rgb(255, 255, 0);
   --yellow-color-hover: rgba(175, 175, 16, 0.781);
 
+  /*COLOR BTN OPTIONS COMPARE*/
+  --win-color: rgba(118, 243, 107, 0.76);
+  --lose-color: rgba(245, 84, 84, 0.767);
+  --tie-color: rgba(255, 230, 92, 0.801);
+
   /*WIDTH SIZE*/
   --width-full: 100%;
 

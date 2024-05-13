@@ -39,12 +39,13 @@ export const PlayGame = (USER) => {
     const containerGame = document.querySelector('.containerGame')
     const idBtnMachine = result[1].machina.toString()
     const btnMachinaStyle = document.querySelector(`#m_${idBtnMachine}`)
+    console.log(result)
     if (result[2]) {
       const scoresUser = document.querySelector('#scoresUser')
       newScore.score++
       scoresUser.textContent = `Puntos: ${newScore.score}`
-      styleResult(btn, 'rgba(72, 182, 86, 0.5)', msg)
-      styleResult(btnMachinaStyle, 'rgba(255, 79, 79, 0.507)', msg)
+      styleResult(btn, 'var(--win-color)', msg)
+      styleResult(btnMachinaStyle, 'var(--lose-color)', msg)
       msg.textContent = result[0].result.msg
       setTimeout(() => {
         msg.innerHTML = ``
@@ -53,15 +54,15 @@ export const PlayGame = (USER) => {
       const scoresMachina = document.querySelector('#scoresMachina')
       newScoreM.score++
       scoresMachina.textContent = `Puntos: ${newScoreM.score}`
-      styleResult(btn, 'rgba(255, 79, 79, 0.507)', msg)
-      styleResult(btnMachinaStyle, 'rgba(72, 182, 86, 0.5)', msg)
+      styleResult(btn, 'var(--lose-color)', msg)
+      styleResult(btnMachinaStyle, 'var(--win-color)', msg)
       msg.textContent = result[0].result.msg
       setTimeout(() => {
         msg.innerHTML = ``
       }, 2000)
     } else {
-      styleResult(btn, 'rgba(255, 227, 69, 0.445)', msg)
-      styleResult(btnMachinaStyle, 'rgba(255, 227, 69, 0.445)', msg)
+      styleResult(btn, 'var(--tie-color)', msg)
+      styleResult(btnMachinaStyle, 'var(--tie-color)', msg)
       msg.textContent = result[0].result.msg
       setTimeout(() => {
         msg.innerHTML = ``
