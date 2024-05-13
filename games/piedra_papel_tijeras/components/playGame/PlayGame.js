@@ -1,17 +1,22 @@
 import './style.css'
 import { machina, options } from '../../utils/utils'
 import { arrayOptions, styleResult, consult, Finish } from './utils'
+import { Header } from '../welcome/Header'
 
+let newScore
+let newScoreM
 export const PlayGame = (USER) => {
-  let newScore = USER
-  let newScoreM = machina
+  newScore = USER
+  newScoreM = machina
   const superDiv = document.querySelector('.containerGame')
+  const msg = document.createElement('p')
+  superDiv.append(msg)
   const containerGame = document.createElement('div')
   containerGame.setAttribute('id', 'containerGame')
   const containerUser = document.createElement('div')
   const containerMachina = document.createElement('div')
   containerUser.innerHTML = `
-    <p>${newScore.name}</p>
+    <p>${USER.name}</p>
     <p id='scoresUser'>Puntos: ${newScore.score}</p>
     <div id="optionsUser"></div>
     `
@@ -31,7 +36,6 @@ export const PlayGame = (USER) => {
     const select = Number(e.target.id.slice(2))
     const btn = optionsUser.querySelector(`#${e.target.id}`)
     const result = consult(select)
-    const msg = document.createElement('p')
     const containerGame = document.querySelector('.containerGame')
     const idBtnMachine = result[1].machina.toString()
     const btnMachinaStyle = document.querySelector(`#m_${idBtnMachine}`)
@@ -63,7 +67,53 @@ export const PlayGame = (USER) => {
         msg.innerHTML = ``
       }, 2000)
     }
-    Finish(newScoreM, newScore)
-    containerGame.append(msg)
+    const resultEnd = Finish(newScoreM, newScore)
+    if (resultEnd?.user || resultEnd?.machina) {
+      ResulEnd(resultEnd, USER)
+    }
   })
+}
+
+const ResulEnd = (resultEnd, USER) => {
+  setTimeout(() => {
+    if (resultEnd.user) {
+      const confirmTurnInit = confirm(
+        '¡Haz Ganado!, Muchas gracias por jugarme. Quieres volver a jugar?'
+      )
+      if (confirmTurnInit) {
+        REINIT()
+        newScore.score = 0
+        newScoreM.score = 0
+        PlayGame(newScore)
+      } else {
+        newScoreM.score = 0
+        DELETE()
+        Header()
+      }
+    } else if (resultEnd.machina) {
+      const confirmTurnInit = confirm(
+        '¡Haz perdido!, Muchas gracias por jugarme. Quieres volver a jugar?'
+      )
+      if (confirmTurnInit) {
+        REINIT()
+        newScore.score = 0
+        newScoreM.score = 0
+        PlayGame(newScore)
+      } else {
+        newScoreM.score = 0
+        DELETE()
+        Header()
+      }
+    }
+  }, 1000)
+  //FUNCTION DELETE AND TURN HEAD
+  const DELETE = () => {
+    document.querySelector('main').remove()
+    document.querySelector('header').remove()
+  }
+  const REINIT = () => {
+    document.querySelector('#containerGame').remove()
+    const parent = document.querySelector('.containerGame')
+    parent.querySelector('p').remove()
+  }
 }

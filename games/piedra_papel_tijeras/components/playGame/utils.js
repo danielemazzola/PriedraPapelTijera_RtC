@@ -43,12 +43,12 @@ export const styleResult = (btn, color, msg) => {
   }, 2000)
 }
 export const Finish = (newScoreM, scoresUser) => {
-  setTimeout(() => {
-    if (newScoreM.score === 3) {
-      alert('has perdido')
-    }
-    if (scoresUser.score === 3) {
-      alert('has ganado')
-    }
-  }, 2000)
+  let result = {}
+  if (newScoreM.score >= 3) {
+    result = { user: false, machina: true }
+  }
+  if (scoresUser.score >= 3) {
+    result = { user: true, machina: false }
+  }
+  return result
 }

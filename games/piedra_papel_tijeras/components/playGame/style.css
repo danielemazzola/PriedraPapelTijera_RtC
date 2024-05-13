@@ -2,6 +2,13 @@
   width: var(--width-full);
   display: flex;
   gap: var(--gap-m);
+  margin-top: 50px;
+}
+.containerGame > p {
+  position: absolute;
+  text-align: center;
+  font-size: var(--font-size-l);
+  text-transform: uppercase;
 }
 #containerGame > div {
   width: var(--width-full);
