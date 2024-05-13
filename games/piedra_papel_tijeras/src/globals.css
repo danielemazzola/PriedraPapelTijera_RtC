@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&family=Jersey+10&family=Khand:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300;500&family=Yrsa&display=swap');
+:root {
+}
+* {
+  font-family: 'Jersey 10', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}

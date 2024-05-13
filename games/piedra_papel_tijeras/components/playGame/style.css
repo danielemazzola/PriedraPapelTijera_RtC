@@ -1,0 +1,41 @@
+#containerGame {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+#containerGame > div {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  background-color: rgb(0, 0, 80);
+  color: yellow;
+  padding: 10px;
+}
+
+#containerGame > div > p {
+  padding: 3px;
+  font-size: 24px;
+}
+#optionsUser,
+#optionsMachina {
+  height: 30svh;
+  border: 2px solid rgb(0, 0, 80);
+  background-color: white;
+  width: 100%;
+}
+#optionsUser > button {
+  width: 100%;
+  height: 10svh;
+  cursor: pointer;
+  background-color: white;
+  font-size: 35px;
+}
+#optionsMachina > button {
+  width: 100%;
+  height: 10svh;
+  cursor: not-allowed;
+  background-color: white;
+  font-size: 35px;
+  text-align: center;
+}
