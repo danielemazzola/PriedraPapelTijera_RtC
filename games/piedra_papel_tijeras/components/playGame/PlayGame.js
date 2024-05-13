@@ -39,7 +39,6 @@ export const PlayGame = (USER) => {
     const containerGame = document.querySelector('.containerGame')
     const idBtnMachine = result[1].machina.toString()
     const btnMachinaStyle = document.querySelector(`#m_${idBtnMachine}`)
-    console.log(result)
     if (result[2]) {
       const scoresUser = document.querySelector('#scoresUser')
       newScore.score++
