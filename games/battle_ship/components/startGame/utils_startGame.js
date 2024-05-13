@@ -11,6 +11,8 @@ export const functionStartGame = () => {
     document.querySelector('#header').remove()
     Header()
   })
+  const saveNameUser = document.querySelector('#saveNameUser')
+  //saveNameUser.addEventListener()
 }
 //FORM CONTROL
 export const formControl = () => {

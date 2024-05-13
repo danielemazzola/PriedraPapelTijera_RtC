@@ -22,7 +22,7 @@ export const formControl = () => {
 const handleSubmitFormUser = (e) => {
   e.preventDefault()
   const name = document.querySelector('#saveNameUser').value
-  USER = { name: name, score: 0 }
+  USER = { name: name, credits: 10 }
   document.querySelector('.containerFormName').remove()
   Init(USER)
 }

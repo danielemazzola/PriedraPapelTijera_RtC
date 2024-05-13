@@ -1,0 +1,64 @@
+.containerGame > #info_user > p {
+  font-size: var(--font-size-l);
+}
+#info_user {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border: 2px solid;
+  padding: 10px;
+}
+#spin {
+  font-size: var(--font-size-m);
+  background-color: var(--info-color-bg);
+  color: var(--primary-color);
+  border-radius: 100%;
+  padding: 20px 18px;
+  cursor: pointer;
+}
+#containerNumber {
+  display: grid !important;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+.btnNumbers {
+  background-color: var(--white-color);
+  height: 40px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lastNumbers {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  gap: 5px;
+}
+#lastNumbers > p {
+  width: 30px;
+  height: 30px;
+  color: var(--yellow-color);
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 579px) {
+  #containerNumber {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  #lastNumbers {
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
+@media (max-width: 379px) {
+  #containerNumber {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #lastNumbers {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

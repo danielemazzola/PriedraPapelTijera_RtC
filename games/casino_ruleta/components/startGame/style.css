@@ -1,0 +1,102 @@
+main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.containerFormName {
+  width: var(--width-full);
+  display: flex;
+  margin: 20px 10px;
+  gap: var(--gap-m);
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.containerFormName > p {
+  color: var(--gray-color);
+  width: var(--width-full);
+  padding: var(--padding-m);
+  font-size: var(--font-size-m);
+  background-color: var(--info-color-bg);
+  border: 2px solid var(--primary-color);
+}
+.containerFormName > form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s);
+}
+.containerFormName > form > label {
+  font-size: var(--font-size-m);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.containerFormName > form > input {
+  padding: var(--padding-s);
+  color: var(--info-color-bg);
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid var(--primary-color);
+  font-size: var(--font-size-s);
+}
+#saveUser {
+  padding: var(--padding-s);
+  font-size: var(--font-size-s);
+  background-color: var(--yellow-color);
+  color: var(--gray-color);
+  cursor: pointer;
+}
+#saveUser:hover {
+  background-color: var(--yellow-color-hover);
+}
+.containerInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 10px;
+  border: 2px dashed var(--primary-color);
+  padding: var(--padding-s);
+  cursor: help;
+}
+.containerInfo > h3 {
+  font-size: var(--font-size-m);
+}
+.containerInfo > p {
+  font-size: var(--font-size-m);
+}
+.containerGame {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 10px;
+}
+.containerGame > button {
+  background-color: var(--primary-color);
+  color: var(--yellow-color);
+  font-size: var(--font-size-l);
+  padding: var(--padding-s);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+#play:hover {
+  animation: shake 0.2s infinite;
+}
+#play.clicked {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  75% {
+    transform: translate(-2px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

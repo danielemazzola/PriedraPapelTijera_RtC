@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&family=Jersey+10&family=Khand:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300;500&family=Yrsa&display=swap');
+:root {
+  --primary-color: rgb(0, 0, 80);
+  --info-color-bg: rgb(255, 158, 158);
+  --gray-color: rgb(66, 66, 66);
+  --yellow-color: rgb(255, 255, 0);
+  --white-color: rgb(255, 255, 255);
+  --yellow-color-hover: rgba(175, 175, 16, 0.781);
+
+  /*COLOR BTN OPTIONS COMPARE*/
+  --win-color: rgba(118, 243, 107, 0.76);
+  --lose-color: rgba(245, 84, 84, 0.767);
+  --tie-color: rgba(255, 230, 92, 0.801);
+
+  /*WIDTH SIZE*/
+  --width-full: 100%;
+
+  /*PADDING SIZE*/
+  --padding-xs: 5px;
+  --padding-s: 10px;
+  --padding-m: 20px;
+  --padding-l: 40px;
+
+  /*FONT SIZE*/
+  --font-size-xxl: 100px;
+  --font-size-xl: 60px;
+  --font-size-l: 40px;
+  --font-size-m: 24px;
+  --font-size-s: 18px;
+
+  /*GAP*/
+  --gap-l: 30px;
+  --gap-m: 10px;
+  --gap-s: 5px;
+}
+* {
+  font-family: 'Jersey 10', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
