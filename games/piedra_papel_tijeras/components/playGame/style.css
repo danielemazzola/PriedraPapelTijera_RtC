@@ -34,13 +34,14 @@
   width: var(--width-full);
   cursor: pointer;
   font-size: var(--font-size-l);
+  background-color: var(--white-color);
 }
 #optionsMachina > button {
   padding: 20px;
   width: var(--width-full);
   cursor: not-allowed;
   font-size: var(--font-size-l);
-  text-align: center;
+  background-color: var(--white-color);
 }
 @media (max-width: 500px) {
   #optionsUser,

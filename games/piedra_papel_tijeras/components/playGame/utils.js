@@ -35,11 +35,19 @@ export const consult = (user) => {
   return result
 }
 export const styleResult = (btn, color, msg) => {
+  const parent = document.querySelector('#optionsUser')
+  const blockBtn = parent.querySelectorAll('button')
   btn.setAttribute('style', `background-color:${color}`)
-  btn.disabled = true
+  for (let index = 0; index < blockBtn.length; index++) {
+    blockBtn[index].disabled = true
+    blockBtn[index].style.cursor = 'not-allowed'
+  }
   setTimeout(() => {
     btn.setAttribute('style', 'background-color:white')
-    btn.disabled = false
+    for (let index = 0; index < blockBtn.length; index++) {
+      blockBtn[index].style.cursor = 'pointer'
+      blockBtn[index].disabled = false
+    }
   }, 2000)
 }
 export const Finish = (newScoreM, scoresUser) => {

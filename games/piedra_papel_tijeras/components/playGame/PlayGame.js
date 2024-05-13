@@ -78,7 +78,7 @@ const ResulEnd = (resultEnd, USER) => {
   setTimeout(() => {
     if (resultEnd.user) {
       const confirmTurnInit = confirm(
-        '¡Haz Ganado!, Muchas gracias por jugarme. Quieres volver a jugar?'
+        '¡Has Ganado!, Muchas gracias por jugarme. Quieres volver a jugar?'
       )
       if (confirmTurnInit) {
         REINIT()
@@ -92,7 +92,7 @@ const ResulEnd = (resultEnd, USER) => {
       }
     } else if (resultEnd.machina) {
       const confirmTurnInit = confirm(
-        '¡Haz perdido!, Muchas gracias por jugarme. Quieres volver a jugar?'
+        '¡Has perdido!, Muchas gracias por jugarme. Quieres volver a jugar?'
       )
       if (confirmTurnInit) {
         REINIT()
