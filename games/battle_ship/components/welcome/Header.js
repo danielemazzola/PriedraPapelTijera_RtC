@@ -13,6 +13,13 @@ export const Header = () => {
         <button class="btnStart">Start</button>
     </div>
   `
+
   body.append(header)
-  functionHeader()
+  //functionHeader()
+  /*LUEGO ELIMINAR ESTO Y DEVOLVER EL functionHeader() */
+  const alertP = document.querySelector('.btnStart')
+  alertP.addEventListener('click', () => {
+    alert('Aun estoy trabajando, en breve estará listo')
+  })
+  /*END LUEGO ELIMINAR ESTO*/
 }
