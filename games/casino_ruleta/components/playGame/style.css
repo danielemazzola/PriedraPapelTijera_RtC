@@ -4,17 +4,11 @@
 #info_user {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: start;
   border: 2px solid;
   padding: 10px;
-}
-#spin {
-  font-size: var(--font-size-m);
-  background-color: var(--info-color-bg);
-  color: var(--primary-color);
-  border-radius: 100%;
-  padding: 20px 18px;
-  cursor: pointer;
+  height: 30svh;
 }
 #containerNumber {
   display: grid !important;
@@ -45,6 +39,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#btnRepeat {
+  font-size: 20px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  background-color: var(--yellow-color);
+  color: var(--info-color-bg);
+  font-weight: bold;
+  cursor: pointer;
+}
+#pUser,
+#pCredits {
+  font-size: var(--font-size-m);
 }
 @media (max-width: 579px) {
   #containerNumber {

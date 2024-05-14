@@ -1,9 +1,9 @@
-import { options } from '../../utils/utils'
+import { tableNumber } from '../../helper/utils.js'
+import { Header } from '../welcome/Header.js'
 export const SpinRoulet = (userSelectNumber, userObject) => {
   let result = {}
-  const array = options(37)
+  const array = tableNumber(37)
   const randomNumber = Math.floor(Math.random() * array.length)
-  //const resulRandom = options[randomNumber]
   for (const option of userSelectNumber) {
     if (option === randomNumber) {
       const updateCredits = userObject.credits + 36
@@ -18,4 +18,8 @@ export const SpinRoulet = (userSelectNumber, userObject) => {
   }
   result = { random: randomNumber, userNumber: userSelectNumber, win: false }
   return result
+}
+export const DELETE = () => {
+  document.querySelector('main').remove()
+  document.querySelector('header').remove()
 }

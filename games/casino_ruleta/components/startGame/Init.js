@@ -1,4 +1,3 @@
-import { options } from '../../utils/utils'
 import { PlayGame } from '../playGame/PlayGame'
 export const Init = (USER) => {
   const main = document.querySelector('main')
@@ -9,7 +8,7 @@ export const Init = (USER) => {
   containerGame.classList.add('containerGame')
 
   containerInfo.innerHTML = `
-  <h3>Hi ${USER.name}!</h3>
+  <h3>Hi ${USER.name.toUpperCase()}!</h3>
   <p>Las reglas son simples, tendrás que elegir el número ganador. Al alcanzar los 100 creditos GANARÁS!</p>
   `
   containerGame.innerHTML = `
@@ -30,8 +29,8 @@ export const Init = (USER) => {
         play.textContent = `Gooooo!!`
       }
       if (count <= -3) {
-        clearInterval(interval)
         play.remove()
+        clearInterval(interval)
         PlayGame(USER)
       }
     }, 1000)

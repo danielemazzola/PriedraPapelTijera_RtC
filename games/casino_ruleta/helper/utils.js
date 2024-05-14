@@ -1,4 +1,4 @@
-export const options = (num) => {
+export const tableNumber = (num) => {
   let numbersRoulete = []
   for (let index = 0; index < num; index++) {
     numbersRoulete.push(index)
