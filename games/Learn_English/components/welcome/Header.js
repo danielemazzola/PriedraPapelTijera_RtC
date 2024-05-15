@@ -4,7 +4,7 @@ export const Header = () => {
   const header = document.createElement('header')
   const main = document.createElement('main')
   header.innerHTML = `
-    <div class='containerHeader'>
+    <div class='containerHeaderLE'>
       <h1>Learn English</h1>
       <button>Restart</button>
     </div>

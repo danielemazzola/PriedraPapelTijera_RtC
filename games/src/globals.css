@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&family=Jersey+10&family=Khand:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300;500&family=Yrsa&display=swap');
+
 :root {
   /*PIEDRA PAPEL TIJERA*/
   --primary-colorPPT: rgb(15, 35, 104);
@@ -16,11 +17,11 @@
 
   /*RULETA*/
   --primary-colorR: rgb(12, 112, 42);
-  --info-color-bgR: rgb(161, 25, 25);
-  --gray-colorR: rgb(66, 66, 66);
-  --yellow-colorR: rgb(235, 255, 146);
+  --info-color-bgR: rgba(161, 25, 25, 0.493);
+  --gray-colorR: rgb(77, 77, 77);
+  --yellow-colorR: rgb(251, 255, 3);
   --white-colorR: rgb(255, 255, 255);
-  --yellow-color-hoverR: rgba(190, 39, 39, 0.781);
+  --yellow-color-hoverR: rgba(194, 207, 12, 0.781);
 
   /*COLOR BTN OPTIONS COMPARE*/
   --win-colorR: rgba(118, 243, 107, 0.76);
