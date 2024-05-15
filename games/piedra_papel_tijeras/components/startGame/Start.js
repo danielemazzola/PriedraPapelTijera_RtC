@@ -2,7 +2,8 @@ import './style.css'
 import { functionStartGame, formControl } from './utils_startGame'
 import { options } from '../../utils/utils'
 export const Start = () => {
-  document.querySelector('#return').remove()
+  const returnBtn = document.querySelector('#return')
+  if (returnBtn) returnBtn.remove()
   const main = document.createElement('main')
   const header = document.querySelector('header')
   header.setAttribute('style', 'height:auto; padding:10px 0;')

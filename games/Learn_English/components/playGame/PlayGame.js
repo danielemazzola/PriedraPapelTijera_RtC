@@ -1,4 +1,5 @@
 import './style.css'
+import { Header } from '../welcome/Header'
 import { randomFruit, fruits, DELETE } from './utils'
 
 const optionsUserSelect = 6
