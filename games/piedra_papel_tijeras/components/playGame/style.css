@@ -1,4 +1,4 @@
-#containerGame {
+#containerGamePPT {
   width: var(--width-full);
   display: flex;
   gap: var(--gap-m);
@@ -6,48 +6,48 @@
   justify-content: center;
   align-items: center;
 }
-.containerGame > p {
+.containerGamePPT > p {
   position: absolute;
   text-align: center;
   font-size: var(--font-size-l);
   text-transform: uppercase;
 }
-#containerGame > div {
+#containerGamePPT > div {
   width: var(--width-full);
   display: flex;
   align-items: end;
   flex-direction: column;
-  background-color: var(--primary-color);
-  color: var(--yellow-color);
+  background-color: var(--primary-colorPPT);
+  color: var(--yellow-colorPPT);
   padding: var(--padding-s);
 }
 
-#containerGame > div > p {
+#containerGamePPT > div > p {
   padding: var(--padding-xs);
   font-size: var(--font-size-m);
 }
-#optionsUser,
-#optionsMachina {
+#optionsUserPPT,
+#optionsMachinaPPT {
   width: var(--width-full);
   display: flex;
 }
-#optionsUser > button {
+#optionsUserPPT > button {
   padding: 20px;
   width: var(--width-full);
   cursor: pointer;
   font-size: var(--font-size-l);
-  background-color: var(--white-color);
+  background-color: var(--white-colorPPT);
 }
-#optionsMachina > button {
+#optionsMachinaPPT > button {
   padding: 20px;
   width: var(--width-full);
   cursor: not-allowed;
   font-size: var(--font-size-l);
-  background-color: var(--white-color);
+  background-color: var(--white-colorPPT);
 }
 @media (max-width: 500px) {
-  #optionsUser,
-  #optionsMachina {
+  #optionsUserPPT,
+  #optionsMachinaPPT {
     display: inline-block;
   }
 }

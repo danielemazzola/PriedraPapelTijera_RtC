@@ -13,12 +13,12 @@ main {
   align-items: start;
 }
 .containerFormName > p {
-  color: var(--gray-color);
+  color: var(--gray-colorR);
   width: var(--width-full);
   padding: var(--padding-m);
   font-size: var(--font-size-m);
-  background-color: var(--info-color-bg);
-  border: 2px solid var(--primary-color);
+  background-color: var(--info-color-bgR);
+  border: 2px solid var(--primary-colorR);
 }
 .containerFormName > form {
   display: flex;
@@ -32,27 +32,27 @@ main {
 }
 .containerFormName > form > input {
   padding: var(--padding-s);
-  color: var(--info-color-bg);
+  color: var(--info-color-bgR);
   text-align: center;
   text-transform: uppercase;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--primary-colorR);
   font-size: var(--font-size-s);
 }
 #saveUser {
   padding: var(--padding-s);
   font-size: var(--font-size-s);
-  background-color: var(--yellow-color);
-  color: var(--gray-color);
+  background-color: var(--yellow-colorR);
+  color: var(--gray-colorR);
   cursor: pointer;
 }
 #saveUser:hover {
-  background-color: var(--yellow-color-hover);
+  background-color: var(--yellow-color-hoverR);
 }
 .containerInfo {
   display: flex;
   flex-direction: column;
   margin: 40px 10px;
-  border: 2px dashed var(--primary-color);
+  border: 2px dashed var(--primary-colorR);
   padding: var(--padding-s);
   cursor: help;
 }
@@ -68,8 +68,8 @@ main {
   margin: 40px 10px;
 }
 .containerGame > button {
-  background-color: var(--primary-color);
-  color: var(--yellow-color);
+  background-color: var(--primary-colorR);
+  color: var(--yellow-colorR);
   font-size: var(--font-size-l);
   padding: var(--padding-s);
   cursor: pointer;

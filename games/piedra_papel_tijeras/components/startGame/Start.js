@@ -2,17 +2,17 @@ import './style.css'
 import { functionStartGame, formControl } from './utils_startGame'
 import { options } from '../../utils/utils'
 export const Start = () => {
-  //Modificar el HEADER y tan solo dejar un boton de reiniciar juego
   const main = document.createElement('main')
+  const header = document.querySelector('header')
   header.setAttribute('style', 'height:auto; padding:10px 0;')
-  const container = document.querySelector('.container')
+  const container = document.querySelector('.containerPPT')
   if (!container) return
   container.remove()
   const btnRestart = (document.querySelector(
-    '.btnStart'
+    '.btnStartPPT'
   ).textContent = `Restart Game`)
   const containerName = document.createElement('div')
-  containerName.classList.add('containerFormName')
+  containerName.classList.add('containerFormNamePPT')
   containerName.innerHTML = `
     <p>¡Bienvenido al juego de ${options.map(
       (val) => val
@@ -24,10 +24,10 @@ export const Start = () => {
     
     ¡Diviértete jugando y que gane el mejor!<br>
     🚨Recuerda que es importante no recargar la página para evitar perder los datos y mantener la continuidad del juego.</p>
-    <form id="handleForm">
-      <label for='saveNameUser'>Escribe tu nombre</label>
-      <input id='saveNameUser' required />
-      <button type="submit" id='saveUser'>Este soy yo</button>
+    <form id="handleFormPPT">
+      <label for='saveNameUserPPT'>Escribe tu nombre</label>
+      <input id='saveNameUserPPT' required />
+      <button type="submit" id='saveUserPPT'>Este soy yo</button>
     </form>
   `
   document.querySelector('body').append(main)

@@ -35,7 +35,7 @@ export const consult = (user) => {
   return result
 }
 export const styleResult = (btn, color, msg) => {
-  const parent = document.querySelector('#optionsUser')
+  const parent = document.querySelector('#optionsUserPPT')
   const blockBtn = parent.querySelectorAll('button')
   btn.setAttribute('style', `background-color:${color}`)
   for (let index = 0; index < blockBtn.length; index++) {

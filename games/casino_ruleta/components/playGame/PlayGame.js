@@ -44,7 +44,7 @@ export const PlayGame = (USER) => {
         userObject.credits--
         pCredits.textContent = ``
         pCredits.textContent = `Credits: ${userObject.credits}`
-        btnNumber.style.backgroundColor = 'var(--info-color-bg)'
+        btnNumber.style.backgroundColor = 'var(--info-color-bgR)'
         btnNumber.disabled = true
       } else if (userSelectNumber.length > 0) {
         alert(
@@ -76,7 +76,7 @@ const timeSpin = () => {
   const timeInfo = document.createElement('button')
   timeInfo.id = 'timeInfo'
   timeInfo.classList.add('btnNumbers')
-  timeInfo.style.backgroundColor = 'var(--yellow-color)'
+  timeInfo.style.backgroundColor = 'var(--yellow-colorR)'
   let time = 10
   const interval = setInterval(() => {
     timeInfo.textContent = time
@@ -101,13 +101,13 @@ const timeSpin = () => {
         pCredits.textContent = ``
         pCredits.textContent = `Credits: ${userObject.credits}`
         for (const btn of btns) {
-          btn.style.backgroundColor = 'var(--white-color)'
+          btn.style.backgroundColor = 'var(--white-colorR)'
           btn.disabled = false
         }
       } else if (!result.win) {
         userSelectNumber = []
         for (const btn of btns) {
-          btn.style.backgroundColor = 'var(--white-color)'
+          btn.style.backgroundColor = 'var(--white-colorR)'
           btn.disabled = false
         }
       }

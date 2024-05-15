@@ -4,9 +4,9 @@ export const Init = (USER) => {
   const main = document.querySelector('main')
   const container = document.createElement('div')
   const containerInfo = document.createElement('div')
-  containerInfo.classList.add('containerInfo')
+  containerInfo.classList.add('containerInfoPPT')
   const containerGame = document.createElement('div')
-  containerGame.classList.add('containerGame')
+  containerGame.classList.add('containerGamePPT')
 
   containerInfo.innerHTML = `
   <h3>Hi ${USER.name}!</h3>
@@ -15,12 +15,12 @@ export const Init = (USER) => {
   )} y ganarle a la 🤖..</p>
   `
   containerGame.innerHTML = `
-  <button id='play'>¿Play Game?</button>
+  <button id='playPPT'>¿Play Game?</button>
   `
   main.append(container)
   container.append(containerInfo, containerGame)
 
-  let play = document.querySelector('#play')
+  let play = document.querySelector('#playPPT')
   play.addEventListener('click', () => {
     play.disabled = true
     let count = 3

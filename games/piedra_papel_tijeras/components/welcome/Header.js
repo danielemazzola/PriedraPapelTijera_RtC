@@ -3,19 +3,19 @@ import { functionHeader } from './utils_header'
 export const Header = () => {
   const body = document.getElementById('app')
   const header = document.createElement('header')
-  header.setAttribute('id', 'header')
+  header.setAttribute('id', 'headerPPT')
   header.setAttribute('style', 'flex:1')
   header.innerHTML = `
-    <div class="containerHeader">
-      <div class="container">
+    <div class="containerHeaderPPT">
+      <div class="containerPPT">
         <h1>GAME</h1>
-        <ul class="listIcon">
+        <ul class="listIconPPT">
           <li>🪨</li>
           <li>🧻</li>
           <li>✂️</li>
         </ul>
       </div>
-        <button class="btnStart">Start</button>
+        <button class="btnStartPPT">Start</button>
     </div>
   `
   body.append(header)

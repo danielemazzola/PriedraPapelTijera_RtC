@@ -17,7 +17,7 @@
   padding: 10px;
 }
 .btnNumbers {
-  background-color: var(--white-color);
+  background-color: var(--white-colorR);
   height: 40px;
   font-size: 24px;
   display: flex;
@@ -33,8 +33,8 @@
 #lastNumbers > p {
   width: 30px;
   height: 30px;
-  color: var(--yellow-color);
-  background-color: var(--primary-color);
+  color: var(--yellow-colorR);
+  background-color: var(--primary-colorR);
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -45,8 +45,8 @@
   height: 10px;
   display: flex;
   align-items: center;
-  background-color: var(--yellow-color);
-  color: var(--info-color-bg);
+  background-color: var(--yellow-colorR);
+  color: var(--info-color-bgR);
   font-weight: bold;
   cursor: pointer;
 }

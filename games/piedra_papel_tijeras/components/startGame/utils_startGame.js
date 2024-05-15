@@ -5,24 +5,24 @@ import { Init } from './Init'
 let USER = {}
 
 export const functionStartGame = () => {
-  const btnRestart = document.querySelector('.btnStart')
+  const btnRestart = document.querySelector('.btnStartPPT')
   btnRestart.addEventListener('click', () => {
     document.querySelector('main').remove()
-    document.querySelector('#header').remove()
+    document.querySelector('#headerPPT').remove()
     Header()
   })
 }
 //FORM CONTROL
 export const formControl = () => {
-  const handleForm = document.querySelector('#handleForm')
+  const handleForm = document.querySelector('#handleFormPPT')
   handleForm.addEventListener('submit', (e) => {
     handleSubmitFormUser(e)
   })
 }
 const handleSubmitFormUser = (e) => {
   e.preventDefault()
-  const name = document.querySelector('#saveNameUser').value
+  const name = document.querySelector('#saveNameUserPPT').value
   USER = { name: name, score: 0 }
-  document.querySelector('.containerFormName').remove()
+  document.querySelector('.containerFormNamePPT').remove()
   Init(USER)
 }

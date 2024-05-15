@@ -8,60 +8,60 @@ let newScoreM
 export const PlayGame = (USER) => {
   newScore = USER
   newScoreM = machina
-  const superDiv = document.querySelector('.containerGame')
+  const superDiv = document.querySelector('.containerGamePPT')
   const msg = document.createElement('p')
   superDiv.append(msg)
   const containerGame = document.createElement('div')
-  containerGame.setAttribute('id', 'containerGame')
+  containerGame.setAttribute('id', 'containerGamePPT')
   const containerUser = document.createElement('div')
   const containerMachina = document.createElement('div')
   containerUser.innerHTML = `
     <p>${USER.name}</p>
     <p id='scoresUser'>Puntos: ${newScore.score}</p>
-    <div id="optionsUser"></div>
+    <div id="optionsUserPPT"></div>
     `
   containerMachina.innerHTML = `
     <p>${machina.name}</p>
-    <p id='scoresMachina'>Puntos: ${machina.score}</p>
-    <div id="optionsMachina"></div>
+    <p id='scoresMachinaPPT'>Puntos: ${machina.score}</p>
+    <div id="optionsMachinaPPT"></div>
   `
 
   superDiv.append(containerGame)
   containerGame.append(containerUser, containerMachina)
-  const optionsUser = document.querySelector('#optionsUser')
-  const optionsMachina = document.querySelector('#optionsMachina')
+  const optionsUser = document.querySelector('#optionsUserPPT')
+  const optionsMachina = document.querySelector('#optionsMachinaPPT')
   const x = arrayOptions(options, optionsUser, false)
   arrayOptions(options, optionsMachina, true)
   optionsUser.addEventListener('click', (e) => {
     const select = Number(e.target.id.slice(2))
     const btn = optionsUser.querySelector(`#${e.target.id}`)
     const result = consult(select)
-    const containerGame = document.querySelector('.containerGame')
+    const containerGame = document.querySelector('.containerGamePPT')
     const idBtnMachine = result[1].machina.toString()
     const btnMachinaStyle = document.querySelector(`#m_${idBtnMachine}`)
     if (result[2]) {
       const scoresUser = document.querySelector('#scoresUser')
       newScore.score++
       scoresUser.textContent = `Puntos: ${newScore.score}`
-      styleResult(btn, 'var(--win-color)', msg)
-      styleResult(btnMachinaStyle, 'var(--lose-color)', msg)
+      styleResult(btn, 'var(--win-colorPPT)', msg)
+      styleResult(btnMachinaStyle, 'var(--lose-colorPPT)', msg)
       msg.textContent = result[0].result.msg
       setTimeout(() => {
         msg.innerHTML = ``
       }, 2000)
     } else if (result[2] === false) {
-      const scoresMachina = document.querySelector('#scoresMachina')
+      const scoresMachina = document.querySelector('#scoresMachinaPPT')
       newScoreM.score++
       scoresMachina.textContent = `Puntos: ${newScoreM.score}`
-      styleResult(btn, 'var(--lose-color)', msg)
-      styleResult(btnMachinaStyle, 'var(--win-color)', msg)
+      styleResult(btn, 'var(--lose-colorPPT)', msg)
+      styleResult(btnMachinaStyle, 'var(--win-colorPPT)', msg)
       msg.textContent = result[0].result.msg
       setTimeout(() => {
         msg.innerHTML = ``
       }, 2000)
     } else {
-      styleResult(btn, 'var(--tie-color)', msg)
-      styleResult(btnMachinaStyle, 'var(--tie-color)', msg)
+      styleResult(btn, 'var(--tie-colorPPT)', msg)
+      styleResult(btnMachinaStyle, 'var(--tie-colorPPT)', msg)
       msg.textContent = result[0].result.msg
       setTimeout(() => {
         msg.innerHTML = ``
@@ -112,8 +112,8 @@ const ResulEnd = (resultEnd, USER) => {
     document.querySelector('header').remove()
   }
   const REINIT = () => {
-    document.querySelector('#containerGame').remove()
-    const parent = document.querySelector('.containerGame')
+    document.querySelector('#containerGamePPT').remove()
+    const parent = document.querySelector('.containerGamePPT')
     parent.querySelector('p').remove()
   }
 }

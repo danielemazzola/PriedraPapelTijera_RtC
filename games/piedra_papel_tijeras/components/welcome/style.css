@@ -3,56 +3,56 @@ header {
   display: flex;
   justify-content: center;
 }
-#header {
+#headerPPT {
   width: var(--width-full);
-  background-color: var(--primary-color);
+  background-color: var(--primary-colorPPT);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.containerHeader {
+.containerHeaderPPT {
   width: var(--width-full);
   display: flex;
   gap: var(--gap-m);
   justify-content: space-around;
   align-items: center;
 }
-.container > h1 {
+.containerPPT > h1 {
   font-size: var(--font-size-xl);
   text-align: center;
-  color: var(--yellow-color);
+  color: var(--yellow-colorPPT);
   max-width: 90%;
 }
-.container > h1::first-letter {
+.containerPPT > h1::first-letter {
   font-size: var(--font-size-xxl);
 }
-.container > ul {
+.containerPPT > ul {
   display: flex;
   align-items: center;
   gap: var(--gap-m);
 }
-.container > ul > li {
+.containerPPT > ul > li {
   font-size: var(--font-size-m);
 }
-.listIcon {
+.listIconPPT {
   display: flex;
 }
-.btnStart {
+.btnStartPPT {
   position: relative;
   font-size: var(--font-size-l);
-  background-color: var(--yellow-color);
+  background-color: var(--yellow-colorPPT);
   padding: 5px;
   border-top: 4px solid gray;
   border-right: 4px solid gray;
   cursor: pointer;
   margin: 10px;
 }
-.btnStart:hover {
-  background-color: var(--yellow-color-hover);
+.btnStartPPT:hover {
+  background-color: var(--yellow-color-hoverPPT);
 }
 
 @media (max-width: 500px) {
-  .containerHeader {
+  .containerHeaderPPT {
     flex-direction: column;
   }
 }

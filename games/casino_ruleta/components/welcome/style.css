@@ -5,7 +5,7 @@ header {
 }
 #header {
   width: var(--width-full);
-  background-color: var(--primary-color);
+  background-color: var(--primary-colorR);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@ header {
 .container > h1 {
   font-size: var(--font-size-xl);
   text-align: center;
-  color: var(--yellow-color);
+  color: var(--yellow-colorR);
   max-width: 90%;
 }
 .container > h1::first-letter {
@@ -40,7 +40,7 @@ header {
 .btnStart {
   position: relative;
   font-size: var(--font-size-l);
-  background-color: var(--yellow-color);
+  background-color: var(--yellow-colorR);
   padding: 5px;
   border-top: 4px solid gray;
   border-right: 4px solid gray;
@@ -48,7 +48,7 @@ header {
   margin: 10px;
 }
 .btnStart:hover {
-  background-color: var(--yellow-color-hover);
+  background-color: var(--yellow-color-hoverR);
 }
 
 @media (max-width: 500px) {
