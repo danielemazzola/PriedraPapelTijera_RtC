@@ -1,4 +1,3 @@
-import { Header } from '../../components/welcome/Header'
 import './style.css'
 import { randomFruit, fruits, DELETE } from './utils'
 
@@ -6,10 +5,6 @@ const optionsUserSelect = 6
 export const PlayGame = (USER) => {
   let userCopy = USER
   const containerGame = document.querySelector('.containerGameLE')
-  const optionsList = document.querySelector('#optionsList')
-  const pointsTarget = document.querySelector('.infoPointsLE')
-  const figure = document.querySelector('.fruit')
-
   const getFruit = randomFruit(fruits, optionsUserSelect)
   containerGame.innerHTML = `
     <div class="containLE">
