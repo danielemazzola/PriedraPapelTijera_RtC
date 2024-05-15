@@ -2,7 +2,7 @@ import { Header } from '../../components/welcome/Header'
 import './style.css'
 import { randomFruit, fruits, DELETE } from './utils'
 
-const optionsUserSelect = 5
+const optionsUserSelect = 6
 export const PlayGame = (USER) => {
   let userCopy = USER
   const containerGame = document.querySelector('.containerGameLE')
@@ -43,36 +43,6 @@ export const PlayGame = (USER) => {
       processSelection(selectedId, getFruit, userCopy)
     })
   }
-  /* const { options } = element
-  for (let index = 0; index < options.length; index++) {
-    const el = options[index]
-    listLi.classList.add('listLi')
-    listLi.textContent = el.name
-    listLi.value = el.id
-    optionsList.append(listLi)
-    listLi.addEventListener('click', (e) => {
-      const compareOptions = comprove(e, element, userCopy)
-      console.log(compareOptions)
-      pointsTarget.innerHTML = ``
-      pointsTarget.textContent = `Points: ${compareOptions.userCopy.points}`
-      if (compareOptions.win) {
-        const updateFruit = randomFruit(fruits, optionsUserSelect)
-        
-        figure.innerHTML = ``
-        figure.textContent = updateFruit.selectedFruit.figure
-        optionsList.innerHTML = ``
-        const { options } = updateFruit
-        for (let i = 0; i < options.length; i++) {
-          const el = options[i]
-          const listLi = document.createElement('li')
-          listLi.classList.add('listLi')
-          listLi.textContent = el.name
-          listLi.value = el.id
-          optionsList.append(listLi)
-        }
-      }
-    })
-  }*/
 }
 const processSelection = (selectedId, getFruit, userCopy) => {
   const { selectedFruit } = getFruit

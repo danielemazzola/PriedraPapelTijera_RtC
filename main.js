@@ -8,21 +8,24 @@ const arrayGames = [
   { id: 2, name: 'Ruleta' },
   { id: 3, name: 'Learn English' }
 ]
-const body = document.querySelector('body')
-const containerGames = document.createElement('header')
-body.append(containerGames)
-for (const arrayGame of arrayGames) {
-  const btnGame = document.createElement('button')
-  btnGame.id = arrayGame.id
-  btnGame.textContent = arrayGame.name.toUpperCase()
-  containerGames.append(btnGame)
-  btnGame.style.cursor = 'pointer'
-  btnGame.addEventListener('click', () => {
-    containerGames.remove()
-    if (btnGame.id === '1') {
-      piedra_papel_tijera()
-    } else if (btnGame.id === '2') {
-      Ruleta()
-    } else if (btnGame.id === '3') learn_english()
-  })
+export const Home = () => {
+  const body = document.querySelector('body')
+  const containerGames = document.createElement('header')
+  body.append(containerGames)
+  for (const arrayGame of arrayGames) {
+    const btnGame = document.createElement('button')
+    btnGame.id = arrayGame.id
+    btnGame.textContent = arrayGame.name.toUpperCase()
+    containerGames.append(btnGame)
+    btnGame.style.cursor = 'pointer'
+    btnGame.addEventListener('click', () => {
+      containerGames.remove()
+      if (btnGame.id === '1') {
+        piedra_papel_tijera()
+      } else if (btnGame.id === '2') {
+        Ruleta()
+      } else if (btnGame.id === '3') learn_english()
+    })
+  }
 }
+Home()

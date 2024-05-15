@@ -34,10 +34,16 @@
   background-color: var(--primary-colorLE);
   padding: var(--padding-s);
   border-radius: 5px;
+  text-align: center;
 }
 .listLi:hover {
   background-color: var(--info-color-bgLE);
   cursor: pointer;
 }
-@media (max-width: 379px) {
+
+@media (max-width: 500px) {
+  #optionsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

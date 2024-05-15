@@ -1,3 +1,4 @@
+import { Home } from '../../../../main'
 import './style.css'
 import { functionHeader } from './utils_header'
 export const Header = () => {
@@ -11,8 +12,15 @@ export const Header = () => {
         <h1>Learn English</h1>
       </div>
         <button class="btnStartLE">Start</button>
+        <button id="return" class="btnReturn">Return</button>
     </div>
   `
+
   body.append(header)
   functionHeader()
+  const btnReturn = document.querySelector('#return')
+  btnReturn.addEventListener('click', () => {
+    header.remove()
+    Home()
+  })
 }

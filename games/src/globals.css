@@ -76,3 +76,8 @@ a {
 ul {
   list-style: none;
 }
+.btnReturn {
+  font-size: var(--font-size-l);
+  background-color: var(--info-color-bgLE);
+  color: var(--white-colorR);
+}
