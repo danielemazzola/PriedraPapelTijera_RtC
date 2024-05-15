@@ -1,0 +1,102 @@
+main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.containerFormNameLE {
+  width: var(--width-full);
+  display: flex;
+  margin: 20px 10px;
+  gap: var(--gap-m);
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.containerFormNameLE > p {
+  color: var(--gray-colorLE);
+  width: var(--width-full);
+  padding: var(--padding-m);
+  font-size: var(--font-size-m);
+  background-color: var(--info-color-bgLE);
+  border: 2px solid var(--primary-colorLE);
+}
+.containerFormNameLE > form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s);
+}
+.containerFormNameLE > form > label {
+  font-size: var(--font-size-m);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.containerFormNameLE > form > input {
+  padding: var(--padding-s);
+  color: var(--info-color-bgLE);
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid var(--primary-colorLE);
+  font-size: var(--font-size-s);
+}
+#saveUserLE {
+  padding: var(--padding-s);
+  font-size: var(--font-size-s);
+  background-color: var(--yellow-colorLE);
+  color: var(--gray-colorLE);
+  cursor: pointer;
+}
+#saveUserLE:hover {
+  background-color: var(--yellow-color-hoverLE);
+}
+.containerInfoLE {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 10px;
+  border: 2px dashed var(--primary-colorLE);
+  padding: var(--padding-s);
+  cursor: help;
+}
+.containerInfoLE > h3 {
+  font-size: var(--font-size-m);
+}
+.containerInfoLE > p {
+  font-size: var(--font-size-m);
+}
+.containerGameLE {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 10px;
+}
+.containerGameLE > button {
+  background-color: var(--primary-colorLE);
+  color: var(--yellow-colorLE);
+  font-size: var(--font-size-l);
+  padding: var(--padding-s);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+#playLE:hover {
+  animation: shake 0.2s infinite;
+}
+#playLE.clicked {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  75% {
+    transform: translate(-2px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

@@ -1,0 +1,43 @@
+.containLE {
+  display: flex;
+  flex-direction: column;
+}
+.containInfoLE {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  font-weight: 700;
+  padding: 10px;
+  background-color: var(--primary-colorLE);
+}
+.containInfoLE > p {
+  color: var(--gray-colorLE);
+}
+#containerGameLE {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#containerSelect {
+  text-align: center;
+  padding: var(--padding-l);
+}
+.fruit {
+  font-size: var(--font-size-xxl);
+}
+#optionsList {
+  display: flex;
+  gap: var(--padding-s);
+  justify-content: space-between;
+}
+.listLi {
+  background-color: var(--primary-colorLE);
+  padding: var(--padding-s);
+  border-radius: 5px;
+}
+.listLi:hover {
+  background-color: var(--info-color-bgLE);
+  cursor: pointer;
+}
+@media (max-width: 379px) {
+}

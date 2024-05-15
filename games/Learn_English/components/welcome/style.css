@@ -1,0 +1,55 @@
+header {
+  padding: var(--padding-s);
+  display: flex;
+  justify-content: center;
+}
+#headerLE {
+  width: var(--width-full);
+  background-color: var(--primary-colorLE);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerHeaderLE {
+  width: var(--width-full);
+  display: flex;
+  gap: var(--gap-m);
+  justify-content: space-around;
+  align-items: center;
+}
+.containerLE > h1 {
+  font-size: var(--font-size-xl);
+  text-align: center;
+  color: var(--yellow-colorLE);
+  max-width: 90%;
+}
+.containerLE > h1::first-letter {
+  font-size: var(--font-size-xxl);
+}
+.containerLE > ul {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-m);
+}
+.containerLE > ul > li {
+  font-size: var(--font-size-m);
+}
+.btnStartLE {
+  position: relative;
+  font-size: var(--font-size-l);
+  background-color: var(--yellow-colorLE);
+  padding: 5px;
+  border-top: 4px solid gray;
+  border-right: 4px solid gray;
+  cursor: pointer;
+  margin: 10px;
+}
+.btnStartLE:hover {
+  background-color: var(--yellow-color-hoverLE);
+}
+
+@media (max-width: 500px) {
+  .containerHeaderLE {
+    flex-direction: column;
+  }
+}

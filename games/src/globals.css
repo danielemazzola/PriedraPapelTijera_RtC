@@ -29,6 +29,20 @@
   --tie-colorR: rgba(255, 230, 92, 0.801);
   /*END RULETA*/
 
+  /*LEARN ENGLISH*/
+  --primary-colorLE: rgb(3, 217, 255);
+  --info-color-bgLE: rgb(255, 109, 109);
+  --gray-colorLE: rgb(77, 77, 77);
+  --yellow-colorLE: rgb(254, 255, 175);
+  --white-colorLE: rgb(255, 255, 255);
+  --yellow-color-hoverLE: rgba(255, 255, 254, 0.781);
+
+  /*COLOR BTN OPTIONS COMPARE*/
+  --win-colorLE: rgba(118, 243, 107, 0.76);
+  --lose-colorLE: rgba(245, 84, 84, 0.767);
+  --tie-colorLE: rgba(255, 230, 92, 0.801);
+  /*END LEARN ENGLISH*/
+
   /*WIDTH SIZE*/
   --width-full: 100%;
 

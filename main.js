@@ -26,5 +26,3 @@ for (const arrayGame of arrayGames) {
     } else if (btnGame.id === '3') learn_english()
   })
 }
-
-/* learn_english() */
