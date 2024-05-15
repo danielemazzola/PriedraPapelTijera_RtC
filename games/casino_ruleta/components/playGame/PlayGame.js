@@ -76,7 +76,7 @@ const timeSpin = () => {
   const timeInfo = document.createElement('button')
   timeInfo.id = 'timeInfo'
   timeInfo.classList.add('btnNumbers')
-  timeInfo.style.backgroundColor = 'var(--info-color-bg)'
+  timeInfo.style.backgroundColor = 'var(--yellow-color)'
   let time = 10
   const interval = setInterval(() => {
     timeInfo.textContent = time
@@ -112,17 +112,11 @@ const timeSpin = () => {
         }
       }
       const msg = document.createElement('p')
-      if (last_number.length >= 20) {
-        last_number.shift()
-      } else {
-        last_number.push(result.random)
-      }
-      last_number
-        .map((number) => {
-          msg.textContent = number
-          containerMsg.append(msg)
-        })
-        .slice(-20)
+      last_number.push(result.random)
+      last_number.map((number) => {
+        msg.textContent = number
+        containerMsg.append(msg)
+      })
       const deleteTargetLastNumbers = containerMsg.querySelectorAll('p')
       if (deleteTargetLastNumbers.length >= 33) {
         containerMsg.innerHTML = ``
