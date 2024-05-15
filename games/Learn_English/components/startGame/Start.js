@@ -2,7 +2,7 @@ import './style.css'
 import { functionStartGame, formControl } from './utils_startGame'
 
 export const Start = () => {
-  //Modificar el HEADER y tan solo dejar un boton de reiniciar juego
+  document.querySelector('#return').remove()
   const main = document.createElement('main')
   const header = document.querySelector('header')
   header.setAttribute('style', 'height:auto; padding:10px 0;')
